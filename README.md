@@ -44,9 +44,9 @@ this method will validate the string you give to the itiz() function </br>
 ```
 
 **params** </br>
-parameters are required, and it must be an object that has one of this: </br>
-**min**: the minimum length of the string
-**max**: the maximum length of the string
+parameters are required, and it must be an object that has one of this:
+</br> **min**: the minimum length of the string
+</br> **max**: the maximum length of the string
 
 ### .same()
 this method will ensure if two (or more) values are the same (equal)
