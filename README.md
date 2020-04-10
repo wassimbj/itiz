@@ -1,15 +1,15 @@
-# What is this ?
+## What is this ?
 this is a **js validation library**, works on the browser as well as on the server, it is well tested with the help of QUnit.
 hope you find it helpful.
 
-# On the Browser:
+## On the Browser:
 if you want to use "itiz" on the browser, just download and then load the itiz.min.js file.
 
 ```js
     <script src='./your_project/path/to/itiz.min.js'></script> 
 ```
 
-# On the Server:
+## On the Server:
 if you are using some server side js frameworks like Nodejs, you just need to npm install it
 ```
     npm i itiz 
@@ -17,7 +17,7 @@ if you are using some server side js frameworks like Nodejs, you just need to np
 and the simply require it as you do with any other package
 
 
-# API & Usage
+## API & Usage
 
 ## itiz(param)
 this is the main function, this will return an object of all the helpful methods that you can use.
