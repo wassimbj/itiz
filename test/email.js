@@ -5,7 +5,7 @@
     // https://en.wikipedia.org/wiki/Email_address
 
     // Check the environment
-    const its = typeof require == 'function' ? require('../its') : window.its;
+    const itiz = typeof require == 'function' ? require('../itiz') : window.itiz;
 
     QUnit.module('email()');
     
@@ -28,7 +28,7 @@
         assert.expect(valid_emails.length);
 
         for(var i=0; i < valid_emails.length; i++){
-            let email = its(valid_emails[i]).email() ? true : false;
+            let email = itiz(valid_emails[i]).email() ? true : false;
 
             assert.ok(email, `${valid_emails[i]} is ${email ? 'Valid' : 'Not Valid'}`);
         }
@@ -51,7 +51,7 @@
         assert.expect(invalid_emails.length);
 
         for(var i=0; i < invalid_emails.length; i++){
-            let email = its(invalid_emails[i]).email() ? true : false;
+            let email = itiz(invalid_emails[i]).email() ? true : false;
 
             assert.notOk(email, `${invalid_emails[i]} is ${email ? 'Valid' : 'Not Valid'}`);
         }

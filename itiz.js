@@ -2,7 +2,7 @@
 /**
  * version: 1.0.0
  * (c) 2020 wassim ben jdida, <- github/wassimbj
- * Its, may be freely distributed under the MIT license.
+ * itiz, may be freely distributed under the MIT license.
 */
 
 (function(global, factory){
@@ -15,22 +15,22 @@
 
     }else if(typeof define === 'function' && define.amd){
 
-        define('its', factory(global));
+        define('itiz', factory(global));
 
     }else{
 
-        global.its = factory(global);
+        global.itiz = factory(global);
 
     }
 
 }(typeof window !== 'undefined' ? window : this, function (global) {
     "use strict";
 
-    // local copy of "its"
-    var Its = function (params) {
+    // local copy of "itiz"
+    var Itiz = function (params) {
 
-        // the Its function constructor
-        return new Its.init(params);
+        // the itiz function constructor
+        return new Itiz.init(params);
 
     }
 
@@ -73,6 +73,7 @@
         "[",
         "]",
     ];
+
     function itsAnEmail() {
         var email = this.params;
 
@@ -157,7 +158,7 @@
         var arr = this.params;
 
         if (!isArray(arr))
-            throw_error('the parameter you passed to the its function must be an array');
+            throw_error('the parameter you passed to the itiz function must be an array');
 
         var i = 0,
             test_passed = true;
@@ -178,7 +179,7 @@
         var object_to_check_into = this.params;
         
         if (typeof object_to_check_into !== 'string' && !isArray(object_to_check_into)){
-            throw_error('The parameter you passed to the its function must be an array or a string');
+            throw_error('The parameter you passed to the itiz function must be an array or a string');
         }
         
         return object_to_check_into.indexOf(item) >= 0;
@@ -193,7 +194,7 @@
         var url = this.params;
 
         if (typeof url !== "string"){
-            throw_error('the url you passed to the its function must be a string');
+            throw_error('the url you passed to the itiz function must be a string');
         }
 
 
@@ -279,7 +280,7 @@
         var obj = this.params;
 
         if (typeof obj !== 'object') {
-            throw_error('Please provide an array or an object to the its function');
+            throw_error('Please provide an array or an object to the itiz function');
         }
 
         if(obj == null){
@@ -315,7 +316,7 @@
         var str = this.params;
 
         if(typeof str !== 'string'){
-            throw_error('Please provide a string to the "its" function');
+            throw_error('Please provide a string to the "itiz" function');
         }
 
         if(option && !isObject(option)){
@@ -362,7 +363,7 @@
         var str = this.params;
 
         if(typeof str !== 'string'){
-            throw_error('Please provide a string to the "its" function');
+            throw_error('Please provide a string to the "itiz" function');
         }
 
         if(option !== undefined && !isObject(option)){
@@ -398,7 +399,7 @@
     }
 
     // All the helpful methodes lives here
-    Its.prototype = {
+    Itiz.prototype = {
 
         email: itsAnEmail,
         length: length,
@@ -414,7 +415,7 @@
 
 
     // init function
-    Its.init = function (params) {
+    Itiz.init = function (params) {
 
         if (!params)
             throw_error('Please provide what you want to validate first as a parameter in the isit function');
@@ -434,10 +435,10 @@
 
 
 
-    // Inherit the (Its) prototype to the function constructor
-    Its.init.prototype = Its.prototype;
+    // Inherit the (Itiz) prototype to the function constructor
+    Itiz.init.prototype = Itiz.prototype;
 
     // Return the function
-    return Its;
+    return Itiz;
 
 }));

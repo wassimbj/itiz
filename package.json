@@ -1,14 +1,14 @@
 {
-  "name": "its",
+  "name": "itiz",
   "version": "1.0.0",
   "description": "well tested js validation library",
-  "main": "its.min.js",
+  "main": "itiz.min.js",
   "repository": {
     "type": "git",
-    "url": " https://github.com/wassimbj/its.git"
+    "url": " https://github.com/wassimbj/itiz.git"
   },
   "scripts": {
-    "build": "uglifyjs its.js -c -o its.min.js"
+    "build": "uglifyjs itiz.js -c -o itiz.min.js"
   },
   "keywords": [
     "validation",

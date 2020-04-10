@@ -2,7 +2,7 @@
     "use strict";
 
     // Check the environment
-    const its = typeof require == 'function' ? require('../its') : window.its;
+    const itiz = typeof require == 'function' ? require('../itiz') : window.itiz;
 
     QUnit.module('url()');
 
@@ -21,7 +21,7 @@
     QUnit.test('valid urls', function(assert){
 
         for(var i=0; i < valid_urls.length; i++){
-            let is_valid = its(valid_urls[i]).url() ? true : false;
+            let is_valid = itiz(valid_urls[i]).url() ? true : false;
             assert.ok(is_valid, `${valid_urls[i]} is valid`);
         }
 
@@ -40,7 +40,7 @@
     QUnit.test('in-valid urls', function(assert){
 
         for(var i=0; i < invalid_urls.length; i++){
-            let is_valid = its(invalid_urls[i]).url() ? true : false;
+            let is_valid = itiz(invalid_urls[i]).url() ? true : false;
             assert.notOk(is_valid, `${invalid_urls[i]} is NOT valid`);
         }
 
@@ -59,7 +59,7 @@
     QUnit.test('in-valid strict urls', function(assert){
 
         for(var i=0; i < invalid_strict_urls.length; i++){
-            let is_valid = its(invalid_strict_urls[i]).url(true) ? true : false;
+            let is_valid = itiz(invalid_strict_urls[i]).url(true) ? true : false;
             assert.notOk(is_valid, `${invalid_strict_urls[i]} is NOT valid`);
         }
 
@@ -76,7 +76,7 @@
     QUnit.test('valid strict urls', function(assert){
 
         for(var i=0; i < valid_strict_urls.length; i++){
-            let is_valid = its(valid_strict_urls[i]).url(true) ? true : false;
+            let is_valid = itiz(valid_strict_urls[i]).url(true) ? true : false;
             assert.ok(is_valid, `${valid_strict_urls[i]} is valid`);
         }
 
