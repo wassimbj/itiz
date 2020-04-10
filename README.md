@@ -20,12 +20,12 @@ and the simply require it as you do with any other package
 ## API & Usage
 
 ## itiz(param)
-this is the main function, this will return an object of all the helpful methods that you can use.
-**param is required, you will get an error if you dont pass anything**
+this is the main function, this will return an object of all the helpful methods that you can use.</br>
+**param is required, you will get an error if you dont pass anything**</br>
 those are the methods you get after calling itiz() with params;
 
 ### .email()
-this method will validate the email you pass to the itiz() function
+this method will validate the email you pass to the itiz() function </br>
 **usage**
 ```js
     // this here will return an object (wich is a chain of all the other method,
@@ -34,7 +34,7 @@ this method will validate the email you pass to the itiz() function
 ```
 
 ### .length(params)
-this method will validate the string you give to the itiz() function
+this method will validate the string you give to the itiz() function </br>
 **usage**
 ```js
 
@@ -43,8 +43,8 @@ this method will validate the string you give to the itiz() function
 
 ```
 
-**params** 
-parameters are required, and it must be an object that has one of this:
+**params** </br>
+parameters are required, and it must be an object that has one of this: </br>
 **min**: the minimum length of the string
 **max**: the maximum length of the string
 
@@ -61,7 +61,7 @@ this method will ensure if two (or more) values are the same (equal)
 ```
 
 ### .url([params])
-this method here will validate if a given url is valid
+this method here will validate if a given url is valid </br>
 **usage**
 ```js
 
@@ -70,7 +70,7 @@ this method here will validate if a given url is valid
 
 ```
 
-**params**
+**params** </br>
 this method accepts one parameter wich is a boolean value (default is false).
 if you pass true to it, it will ensure that that the url must contain the protocol (http/https)
 ```js
@@ -79,8 +79,8 @@ if you pass true to it, it will ensure that that the url must contain the protoc
 ```
 
 ### .contains(params)
-this method will validate if a **string or array** contains a specific value;
-***this method will return only boolean value (true/false), it wont return an object*** 
+this method will validate if a **string or array** contains a specific value; </br>
+***this method will return only boolean value (true/false), it wont return an object*** </br>
 
 **usage**
 ```js
@@ -95,7 +95,7 @@ this method will validate if a **string or array** contains a specific value;
 
 ### .notEmpty()
 this method will validate if an array/object is not empty
-***it will return an object if valid or false if not***
+***it will return an object if valid or false if not*** </br>
 
 **usage**
 ```js
@@ -109,7 +109,7 @@ this method will validate if an array/object is not empty
 
 ### .empty()
 this method will validate if an array/object is empty
-***it will return an object if valid or false if not***
+***it will return an object if valid or false if not*** </br>
 
 **usage**
 ```js
@@ -123,7 +123,7 @@ this method will validate if an array/object is empty
 
 ### .upperCase([params])
 this method will validate if an a string is upper case 
-***it will return an object if valid or false if not***
+***it will return an object if valid or false if not*** </br>
 
 **usage**
 ```js
@@ -134,8 +134,8 @@ this method will validate if an a string is upper case
 
 ```
 
-**params**
-this method accepts one **optional** parameter wich is an object with an index property, 
+**params** </br>
+this method accepts one **optional** parameter wich is an object with an index property,</br>
 that can be a number or array of numbers. **this parameter will ensure that the index given is upper-case**
 
 ```js
@@ -145,7 +145,7 @@ that can be a number or array of numbers. **this parameter will ensure that the 
 
 ### .lowerCase([params])
 this method will validate if an a string is lower case 
-***it will return an object if valid or false if not***
+***it will return an object if valid or false if not*** </br>
 
 **usage**
 ```js
@@ -156,7 +156,7 @@ this method will validate if an a string is lower case
 
 ```
 
-**params**
+**params** </br>
 this method accepts one **optional** parameter wich is an object with an index property, same as the upperCase() method, 
 that can be a number or array of numbers.
 
