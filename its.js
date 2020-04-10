@@ -313,7 +313,6 @@
     // option is optional :)
     function upperCase(option){
         var str = this.params;
-        // console.log(str)
 
         if(typeof str !== 'string'){
             throw_error('Please provide a string to the "its" function');

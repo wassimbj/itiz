@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "well tested js validation library",
   "main": "its.min.js",
-  "directories": {
-    "test": "test"
+  "repository": {
+    "type": "git",
+    "url": " https://github.com/wassimbj/its.git"
   },
   "scripts": {
     "build": "uglifyjs its.js -c -o its.min.js"
