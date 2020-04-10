@@ -27,7 +27,7 @@
     "use strict";
 
     // local copy of "its"
-    const Its = function (params) {
+    var Its = function (params) {
 
         // the Its function constructor
         return new Its.init(params);
@@ -132,7 +132,11 @@
         if (min_max == null || typeof min_max !== 'object')
             throw_error('length parameter must be of type object');
 
-        var { min, max } = min_max;
+        // var { min, max } = min_max;
+        
+        var min = min_max.min;
+        var max = min_max.max;
+
         var result = false;
 
         if (min && !max)
@@ -189,7 +193,7 @@
         var url = this.params;
 
         if (typeof url !== "string"){
-            throw_error(`the url you passed to the its function must be a string you gave ${typeof url}`);
+            throw_error('the url you passed to the its function must be a string');
         }
 
 
@@ -308,7 +312,7 @@
     // option for specifications, specify the index, it can be an array of indexes
     // option is optional :)
     function upperCase(option){
-        let str = this.params;
+        var str = this.params;
         // console.log(str)
 
         if(typeof str !== 'string'){
@@ -356,7 +360,7 @@
     // option for specifications, specify the index, it can be an array of indexes
     // option, is optional :)
     function lowerCase(option){
-        let str = this.params;
+        var str = this.params;
 
         if(typeof str !== 'string'){
             throw_error('Please provide a string to the "its" function');

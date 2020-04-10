@@ -1,0 +1,26 @@
+{
+  "name": "its",
+  "version": "1.0.0",
+  "description": "well tested js validation library",
+  "main": "its.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "uglifyjs its.js -c -o its.min.js"
+  },
+  "keywords": [
+    "validation",
+    "js",
+    "server",
+    "browser",
+    "client",
+    "util"
+  ],
+  "author": "wassimbj",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "uglify-js": "^3.8.1"
+  }
+}
