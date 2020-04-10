@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Its </title>
+</head>
+<body style="background: #222; color: #999">
+
+    <h1> Its ? </h1>
+
+    <script src='./its.js'></script>
+
+    <script>
+    
+        // console.dir(its('wassimbenjdida@gmail.com').email()) // Passed
+        // console.dir(its('joe.doe@mail.net').email()) // Passed
+        
+        // console.dir(its('some_bla_bla').length({min: 20, max: 22})) // Passed
+        
+        // console.dir(its(['1', '1']).same()) // Passed
+        
+        // console.dir(its(['0', '1']).contains('1')) // Passed
+        // console.dir(its(['0', '1']).contains('5')) // Passed
+        
+        // console.log('facebook.com', its('facebook.com').url()) // Passed
+        // console.log('facebook.com', its('facebook.com').url(true)) // Fail
+        // console.log('http://hhhh.cc', its('http://hhhh.cc').url()) // Passed
+        // console.log('facc.', its('facc.').url()) // Fail
+        // console.log('http://face.cc/ff5/ff', its('http://face.cc/ff5/ff').url()) // Passed
+        // console.log('http://face.cc/ff5//ff', its('http://face.cc/ff5//ff').url()) // fail
+        // console.log('www.face.co', its('www.face.co').url()) // Passed
+        // console.log('www.face.', its('www.face.').url()) // Fail
+    
+        // console.dir(its(['1']).empty()) // Passed, Result: false
+        // console.dir(its([]).empty()) // Passed, Result: true
+        // console.dir(its({}).empty()) // Passed, Result: true
+        // console.dir(its({age: 52}).empty()) // Passed, Result: false
+
+        // console.dir(its([]).notEmpty()) // Passed, Result: false
+        // console.dir(its([]).notEmpty()) // Passed, Result: Object
+        // console.dir(its({}).notEmpty()) // Passed, Result: false
+        // console.dir(its({name: 'bla'}).notEmpty()) // Passed, Result: Object
+
+
+        // console.dir(its('bassa').lowerCase()) // Passed, Result: Object
+
+        console.dir(its('Bassa').upperCase({index: 0})) // Passed, Result: Object
+
+    </script>
+
+
+    
+</body>
+</html>
