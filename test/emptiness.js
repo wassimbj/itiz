@@ -31,6 +31,18 @@
         assert.ok(is_obj_empty, 'Object is empty');
         
     });
+    
+    // is string empty
+    QUnit.test('is string empty ?', function(assert){
+
+        const is_str_empty = itiz('').empty() ? true : false;
+        assert.ok(is_str_empty, 'String is empty');
+        
+        const is_str_notempty = itiz('bla bla').empty() ? true : false;
+        assert.notOk(is_str_notempty, 'string is not empty');
+        
+    });
+
 
 
 }())

@@ -279,11 +279,8 @@
     function notEmpty() {
         var obj = this.params;
 
-        if (typeof obj !== 'object') {
-            throw_error('Please provide an array or an object to the itiz function');
-        }
-
-        if(obj == null){
+        // if nullish values are given
+        if(!obj){
             return false;
         }
 
@@ -417,19 +414,10 @@
     // init function
     Itiz.init = function (params) {
 
-        if (!params)
-            throw_error('Please provide what you want to validate first as a parameter in the isit function');
-
         if (arguments.length > 1)
             throw_error('Only one parameter is allowed, if you want to use multiple parameters you have to provide them as an array');
 
         this.params = params;
-
-
-        // if (typeof params !== "string" || isArray(params) || typeof params !== "number")
-        //     throw_error(`
-        //         Parameters must be type of "String", "Array" or "Number"
-        //     `);
 
     }
 
