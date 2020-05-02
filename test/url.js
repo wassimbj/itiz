@@ -2,7 +2,7 @@
     "use strict";
 
     // Check the environment
-    const itiz = typeof require == 'function' ? require('../itiz') : window.itiz;
+    const itiz = typeof require == 'function' ? require('../itiz.min.js') : window.itiz;
 
     QUnit.module('url()');
 

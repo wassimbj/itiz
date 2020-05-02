@@ -94,7 +94,7 @@ this method will validate if a **string or array** contains a specific value; </
 ```
 
 ### .notEmpty()
-this method will validate if an array/object is not empty
+this method will validate if an array/object/string is not empty
 ***it will return an object if valid or false if not*** </br>
 
 **usage**
@@ -108,7 +108,7 @@ this method will validate if an array/object is not empty
 
 
 ### .empty()
-this method will validate if an array/object is empty
+this method will validate if an array/object/string is empty
 ***it will return an object if valid or false if not*** </br>
 
 **usage**
